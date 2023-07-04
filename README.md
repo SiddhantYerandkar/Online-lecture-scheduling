@@ -22,7 +22,7 @@ The Online Lecture Scheduling Module is a web application that allows administra
 ## Routes/Links
 
 - **POST /createInstructor** - Create a new Instructor
-- **GET /listOfInstructors'** - Get all instructor list
+- **GET /listOfInstructors** - Get all instructor list
 - **GET /getAssignedLectures/:instructorId** - Get all lectures assigned to the instructor
 - **POST /course** - Create a new Course
 - **POST /addLecture/:courseId** - adding lecture to the course created
