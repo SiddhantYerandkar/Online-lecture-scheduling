@@ -3,11 +3,14 @@ const router = express.Router()
 const instructorController = require('../controller/instructorController')
 const courseController = require('../controller/courseController')
 
-const { createInstructor, getAssignedLectures } = instructorController
+const { createInstructor, getAssignedLectures, getAllInstructors } = instructorController
 const { createCourse, addLectureToCourse } = courseController
 
 //creating new Instructor
 router.post('/createInstructor', createInstructor)
+
+//Get all instructor
+router.get('/listOfInstructors', getAllInstructors)
 
 //Get all lectures assigned to the instructor
 router.get('/getAssignedLectures/:instructorId', getAssignedLectures )

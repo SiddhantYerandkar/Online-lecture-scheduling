@@ -22,6 +22,7 @@ The Online Lecture Scheduling Module is a web application that allows administra
 ## Routes/Links
 
 - **POST /createInstructor** - Create a new Instructor
+- **GET /listOfInstructors'** - Get all instructor list
 - **GET /getAssignedLectures/:instructorId** - Get all lectures assigned to the instructor
 - **POST /course** - Create a new Course
 - **POST /addLecture/:courseId** - adding lecture to the course created 
@@ -29,3 +30,6 @@ The Online Lecture Scheduling Module is a web application that allows administra
 ## Deplyoment
 
 The Online Lecture Scheduling Module is deployed and can be accessed at [https://online-lecture-scheduling.onrender.com](https://online-lecture-scheduling.onrender.com) (This is the base URL)
+
+e.g: If we wanted to get list of all instructor then the url for that would be :-
+[https://online-lecture-scheduling.onrender.com/listOfInstructors](https://online-lecture-scheduling.onrender.com/listOfInstructors)
