@@ -34,5 +34,6 @@ To access these routes, append the specific route to the base URL or domain wher
 The Online Lecture Scheduling Module is deployed and can be accessed at [https://online-lecture-scheduling.onrender.com](https://online-lecture-scheduling.onrender.com) (This is the base URL)
 
 **Note:** The deployment link provided above is the base URL of the application. To access different routes and functionalities, append the specific route to the base URL.
+
 e.g: If we wanted to get list of all instructor then the url for that would be :-
 [https://online-lecture-scheduling.onrender.com/listOfInstructors](https://online-lecture-scheduling.onrender.com/listOfInstructors)
