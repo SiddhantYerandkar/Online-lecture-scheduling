@@ -32,6 +32,18 @@ const createInstructor = async function (req, res) {
     }
 }
 
+// Get list of all instructors
+
+const getAllInstructors = async function (req, res) {
+    try {
+        const instructor = await instructorModel.find()
+
+        return res.status(200).send({ status: true, data: instructor, message:"Successful"})
+
+    } catch (error) {
+        return res.status(500).send({ status: false, message: error.message })
+    }
+}
 
 // Get lectures assigned to the logged-in instructor
 const getAssignedLectures = async function (req, res) {
@@ -59,4 +71,4 @@ const getAssignedLectures = async function (req, res) {
 }
 
 
-module.exports = { createInstructor, getAssignedLectures }
+module.exports = { createInstructor, getAssignedLectures, getAllInstructors }

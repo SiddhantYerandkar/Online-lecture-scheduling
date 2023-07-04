@@ -28,4 +28,4 @@ The Online Lecture Scheduling Module is a web application that allows administra
 
 ## Deplyoment
 
-The Online Lecture Scheduling Module is deployed and can be accessed at [https://online-lecture-scheduling.onrender.com](https://online-lecture-scheduling.onrender.com).
+The Online Lecture Scheduling Module is deployed and can be accessed at [https://online-lecture-scheduling.onrender.com](https://online-lecture-scheduling.onrender.com) (This is the base URL)
