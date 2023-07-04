@@ -36,9 +36,9 @@ const createInstructor = async function (req, res) {
 
 const getAllInstructors = async function (req, res) {
     try {
-        const instructor = await instructorModel.find()
+        const instructor = await instructorModel.find().select({_id:0,__v:0})
 
-        return res.status(200).send({ status: true, data: instructor, message:"Successful"})
+        return res.status(200).send({ status: true, message:"List of all instructors", data:instructor})
 
     } catch (error) {
         return res.status(500).send({ status: false, message: error.message })
